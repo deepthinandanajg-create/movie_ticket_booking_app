@@ -24,6 +24,10 @@ class BookingProvider extends ChangeNotifier {
     selectedMovie = movie;
     notifyListeners();
   }
+  void resetMovie() {
+  selectedMovie = "Kalki";
+  notifyListeners();
+}
 
   int get price => prices[selectedMovie] ?? 0;
 }
