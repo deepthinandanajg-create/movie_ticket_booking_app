@@ -132,3 +132,7 @@ Screenshots of the application will be added here as the project develops.
 ## 📄 License
 
 This project is created for educational purposes.
+=====================================================================
+01-10-2026
+now am implementing 6th experiment . custom widgets
+![alt text](image.png)
