@@ -134,5 +134,6 @@ Screenshots of the application will be added here as the project develops.
 This project is created for educational purposes.
 =====================================================================
 01-10-2026
+
 This screenshot represents the working web interface of the Movie Ticket Booking App developed using Flutter. The application allows users to select movies, view booking details, choose the number of tickets, and calculate the total ticket price.
-![alt text](image.png)
+![alt text](image-1.png)
