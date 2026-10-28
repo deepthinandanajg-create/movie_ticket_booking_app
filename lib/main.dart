@@ -24,10 +24,11 @@ class BookingProvider extends ChangeNotifier {
     selectedMovie = movie;
     notifyListeners();
   }
+
   void resetMovie() {
-  selectedMovie = "Kalki";
-  notifyListeners();
-}
+    selectedMovie = "Kalki";
+    notifyListeners();
+  }
 
   int get price => prices[selectedMovie] ?? 0;
 }
@@ -76,9 +77,47 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
 
+            const SizedBox(height: 20),
+
+// Movie poster using Stack, Container, Image and Icon
+            Center(
+              child: Container(
+                width: 220,
+                height: 150,
+                decoration: BoxDecoration(
+                  color: Colors.deepPurple.shade100,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    const Icon(
+                      Icons.movie,
+                      size: 100,
+                      color: Colors.deepPurple,
+                    ),
+                    Positioned(
+                      bottom: 10,
+                      child: Container(
+                        padding: const EdgeInsets.all(6),
+                        color: Colors.black87,
+                        child: Text(
+                          booking.selectedMovie,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+
             const SizedBox(height: 25),
 
-            // Movie selection
+// Movie selection
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -224,16 +263,12 @@ class _BookingScreenState extends State<BookingScreen> {
               "Movie: ${booking.selectedMovie}",
               style: const TextStyle(fontSize: 20),
             ),
-
             const SizedBox(height: 15),
-
             Text(
               "Price per ticket: ₹${booking.price}",
               style: const TextStyle(fontSize: 18),
             ),
-
             const SizedBox(height: 20),
-
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -247,12 +282,10 @@ class _BookingScreenState extends State<BookingScreen> {
                   },
                   icon: const Icon(Icons.remove),
                 ),
-
                 Text(
                   "$ticketCount",
                   style: const TextStyle(fontSize: 20),
                 ),
-
                 IconButton(
                   onPressed: () {
                     setState(() {
@@ -263,9 +296,7 @@ class _BookingScreenState extends State<BookingScreen> {
                 ),
               ],
             ),
-
             const SizedBox(height: 20),
-
             Text(
               "Total: ₹${booking.price * ticketCount}",
               style: const TextStyle(
@@ -273,9 +304,7 @@ class _BookingScreenState extends State<BookingScreen> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-
             const SizedBox(height: 25),
-
             ElevatedButton(
               onPressed: () {
                 ScaffoldMessenger.of(context).showSnackBar(
@@ -288,9 +317,7 @@ class _BookingScreenState extends State<BookingScreen> {
               },
               child: const Text("Confirm Booking"),
             ),
-
             const SizedBox(height: 15),
-
             ElevatedButton(
               onPressed: () {
                 Navigator.pop(context);
