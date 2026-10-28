@@ -1,3 +1,4 @@
+// Movie Ticket Booking App
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
