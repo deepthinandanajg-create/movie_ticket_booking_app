@@ -159,3 +159,14 @@ The Navigator and Named Routes are used to move between different screens in the
 Stateful and Stateless widgets are used to manage the Movie Ticket Booking App interface. The app uses setState and Provider to update the selected movie, ticket price, number of tickets, and total booking cost dynamically.
 
 ![alt text](image-1.png)
+
+
+Custom widgets and themes are used to improve the appearance of the Movie Ticket Booking App. Consistent colors, text styles, and reusable widgets display movie details, ticket prices, and booking information clearly.
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
+
+The Movie Ticket Booking App displays movie names, details, and ticket prices using predefined data in Flutter. Users can select a movie and view its ticket price and booking information.
+
+![alt text](image-4.png)
