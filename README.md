@@ -132,3 +132,12 @@ This project is created for educational purposes.
 
 Flutter widgets such as Text, Icon, Row, Column, and Stack are used to design the Movie Ticket Booking App interface. These widgets arrange movie names, prices, and selection buttons in a user-friendly layout.
 ![alt text](<Screenshot 2026-10-28 183121.png>)
+
+
+The app uses MediaQuery and LayoutBuilder to create a responsive user interface that adjusts to different screen sizes. This helps the Movie Ticket Booking App display its content properly on mobile phones, tablets, and computers.
+
+![alt text](<Screenshot 2026-10-29 175448-1.png>)
+
+![alt text](<Screenshot 2026-10-29 175515.png>)
+
+![alt text](<Screenshot 2026-10-29 175644.png>)
