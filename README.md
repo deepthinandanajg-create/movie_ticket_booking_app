@@ -149,9 +149,11 @@ The app uses MediaQuery and LayoutBuilder to create a responsive user interface 
 
 The Navigator and Named Routes are used to move between different screens in the Movie Ticket Booking App. Users can navigate from the home screen to movie details and booking screens, and return using the back button.
 
-![alt text](<Screenshot 2026-10-29 180434.png>)  
+![alt text](<Screenshot 2026-10-29 180434.png>) 
+
 
 ![alt text](<Screenshot 2026-10-29 180457-1.png>)  
+
 
 ![alt text](<Screenshot 2026-10-29 180517.png>)
 
@@ -168,5 +170,11 @@ Custom widgets and themes are used to improve the appearance of the Movie Ticket
 ![alt text](image-3.png)
 
 The Movie Ticket Booking App displays movie names, details, and ticket prices using predefined data in Flutter. Users can select a movie and view its ticket price and booking information.
+
+![alt text](image-5.png)
+
+![alt text](image-6.png)
+
+![alt text](image-7.png)
 
 ![alt text](image-4.png)
