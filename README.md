@@ -154,3 +154,8 @@ The Navigator and Named Routes are used to move between different screens in the
 ![alt text](<Screenshot 2026-10-29 180457-1.png>)  
 
 ![alt text](<Screenshot 2026-10-29 180517.png>)
+
+
+Stateful and Stateless widgets are used to manage the Movie Ticket Booking App interface. The app uses setState and Provider to update the selected movie, ticket price, number of tickets, and total booking cost dynamically.
+
+![alt text](image-1.png)
